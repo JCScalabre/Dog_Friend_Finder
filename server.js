@@ -93,7 +93,7 @@ app.get("/", function(req, res) {
 	res.sendFile(path.join(__dirname, "app/public/home.html"));
 });
 
-app.get("/users", function(req, res) {
+app.get("/friends", function(req, res) {
 	res.json(users)
 });
 
