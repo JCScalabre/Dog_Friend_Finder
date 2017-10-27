@@ -5,12 +5,14 @@
  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  	<!--Import materialize.css-->
  	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
- 	<link rel="stylesheet" type="text/css" href="css/homeStyle.css">
+ 	<link rel="stylesheet" type="text/css" href="css/surveyStyle.css">
  	<!--Let browser know website is optimized for mobile-->
  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  </head>
 
  <body>
+ 	<div class="row">
+    <div class="col s6 offset-s3" id="main">
 
  			<h2>Survey Questions</h2>
  			
@@ -137,13 +139,19 @@
  				</select>
  			</p>
 
- 			<button id="submit">submit</button>
+ 			<button class="waves-effect waves-light btn" id="submit"><i class="material-icons left">check</i>submit</button>
+
+ 			</div>
+  </div>
 
  	<!--Import jQuery before materialize.js-->
  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
- 	<!-- <script type="text/javascript" src="javascript/materialize.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
  	<!-- <script type="text/javascript" src="javascript/homeLogic.js"></script> -->
  	<script type="text/javascript">
+ 		$(document).ready(function() {
+    $('select').material_select();
+  });
 
  		$("#submit").on("click", function(event) {
 
@@ -169,17 +177,19 @@
  				alert("Congratulations, your match is " + data.matchName);
 
  				// Clear input after submission:
- 				$("#name").val("");
- 				$("#q1").val("");
- 				$("#q2").val("");
- 				$("#q3").val("");
- 				$("#q4").val("");
- 				$("#q5").val("");
- 				$("#q6").val("");
- 				$("#q7").val("");
- 				$("#q8").val("");
- 				$("#q9").val("");
- 				$("#q10").val("");
+ 				 // $('select').material_select('select');
+
+ 				// $("#name").val("");
+ 				// $("#q1").val("");
+ 				// $("#q2").val("");
+ 				// $("#q3").val("");
+ 				// $("#q4").val("");
+ 				// $("#q5").val("");
+ 				// $("#q6").val("");
+ 				// $("#q7").val("");
+ 				// $("#q8").val("");
+ 				// $("#q9").val("");
+ 				// $("#q10").val("");
  			})
 
  		});
