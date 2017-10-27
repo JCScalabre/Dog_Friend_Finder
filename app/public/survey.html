@@ -23,11 +23,11 @@
  			<div class="input-field col s12">
  				<select id="q1">
  					<option value="" disabled selected>Choose your option</option>
- 					<option value="1">Option 1</option>
- 					<option value="2">Option 2</option>
- 					<option value="3">Option 3</option>
- 					<option value="4">Option 4</option>
- 					<option value="5">Option 5</option>
+ 					<option value="1">Aaaa</option>
+ 					<option value="2">BBBBBBBBBB</option>
+ 					<option value="3">Ccccc</option>
+ 					<option value="4">ddddd</option>
+ 					<option value="5">eeeee</option>
  				</select>
  				<select id="q2">
  					<option value="" disabled selected>Choose your option</option>
@@ -44,32 +44,32 @@
  		</div>
  	</div>
 
- <!--Import jQuery before materialize.js-->
- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
- <!-- <script type="text/javascript" src="javascript/materialize.js"></script> -->
- <!-- <script type="text/javascript" src="javascript/homeLogic.js"></script> -->
- <script type="text/javascript">
+ 	<!--Import jQuery before materialize.js-->
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+ 	<!-- <script type="text/javascript" src="javascript/materialize.js"></script> -->
+ 	<!-- <script type="text/javascript" src="javascript/homeLogic.js"></script> -->
+ 	<script type="text/javascript">
 
- 	$("#submit").on("click", function(event) {
- 		
- 		event.preventDefault();
- 		var answers = [];
- 		answers.push($("#q1").val());
- 		answers.push($("#q2").val());
+ 		$("#submit").on("click", function(event) {
 
- 		var newUser = {
- 			name: $("#name").val().trim(),
- 			answers: answers
- 		}
+ 			event.preventDefault();
+ 			var answers = [];
+ 			answers.push($("#q1").val());
+ 			answers.push($("#q2").val());
 
- 		console.log("User successfully added")
+ 			var newUser = {
+ 				name: $("#name").val().trim(),
+ 				answers: answers
+ 			};
 
- 		$.post("/api/add", newUser, function(data) {
+ 			console.log("User successfully added");
 
- 		})
+ 			$.post("/api/add", newUser, function(data) {
+ 				alert(data.hello)
+ 			})
 
- 	});
+ 		});
 
- </script>
-</body>
-</html>
+ 	</script>
+ </body>
+ </html>
