@@ -12,37 +12,132 @@
 
  <body>
 
- 	<div class="row">
- 		<div class="col s6 offset-s3" id="main">
- 			<span class="flow-text center-align">Welcome to the survey page</span>
- 			<br>
- 			Enter your name
- 			<br>
+ 			<h2>Survey Questions</h2>
+ 			
+ 			<p>Enter your name</p>
  			<input type="text" id="name">
- 			<br><br>
- 			<div class="input-field col s12">
+
+ 			<p>1. You enjoy meeting new people</p>
+ 			<p>
  				<select id="q1">
  					<option value="" disabled selected>Choose your option</option>
- 					<option value="1">Aaaa</option>
- 					<option value="2">BBBBBBBBBB</option>
- 					<option value="3">Ccccc</option>
- 					<option value="4">ddddd</option>
- 					<option value="5">eeeee</option>
+ 					<option value="1">1 (Strongly Disagree)</option>
+ 					<option value="2">2</option>
+ 					<option value="3">3 (Unsure)</option>
+ 					<option value="4">4</option>
+ 					<option value="5">5 (Strongly Agree)</option>
  				</select>
+ 			</p>
+
+ 			<p>2. You like helping people</p>
+ 			<p>
  				<select id="q2">
  					<option value="" disabled selected>Choose your option</option>
- 					<option value="1">Option 1</option>
- 					<option value="2">Option 2</option>
- 					<option value="3">Option 3</option>
- 					<option value="4">Option 4</option>
- 					<option value="5">Option 5</option>
+ 					<option value="1">1 (Strongly Disagree)</option>
+ 					<option value="2">2</option>
+ 					<option value="3">3 (Unsure)</option>
+ 					<option value="4">4</option>
+ 					<option value="5">5 (Strongly Agree)</option>
  				</select>
- 				<label>Materialize Select</label>
- 			</div>
- 			<br>
+ 			</p>
+
+ 			<p>3. You sometimes make mistakes</p>
+ 			<p>
+ 				<select id="q3">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">1 (Strongly Disagree)</option>
+ 					<option value="2">2</option>
+ 					<option value="3">3 (Unsure)</option>
+ 					<option value="4">4</option>
+ 					<option value="5">5 (Strongly Agree)</option>
+ 				</select>
+ 			</p>
+
+ 			<p>4. You're easily disappointed</p>
+ 			<p>
+ 				<select id="q4">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">1 (Strongly Disagree)</option>
+ 					<option value="2">2</option>
+ 					<option value="3">3 (Unsure)</option>
+ 					<option value="4">4</option>
+ 					<option value="5">5 (Strongly Agree)</option>
+ 				</select>
+ 			</p>
+
+ 			<p>5. You enjoy repairing things</p>
+ 			<p>
+ 				<select id="q5">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">1 (Strongly Disagree)</option>
+ 					<option value="2">2</option>
+ 					<option value="3">3 (Unsure)</option>
+ 					<option value="4">4</option>
+ 					<option value="5">5 (Strongly Agree)</option>
+ 				</select>
+ 			</p>
+
+ 			<p>6. You like to be surrounded by people</p>
+ 			<p>
+ 				<select id="q6">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">1 (Strongly Disagree)</option>
+ 					<option value="2">2</option>
+ 					<option value="3">3 (Unsure)</option>
+ 					<option value="4">4</option>
+ 					<option value="5">5 (Strongly Agree)</option>
+ 				</select>
+ 			</p>
+
+ 			<p>7. You always think people are negatively judging you</p>
+ 			<p>
+ 				<select id="q7">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">1 (Strongly Disagree)</option>
+ 					<option value="2">2</option>
+ 					<option value="3">3 (Unsure)</option>
+ 					<option value="4">4</option>
+ 					<option value="5">5 (Strongly Agree)</option>
+ 				</select>
+ 			</p>
+
+ 			<p>8. You are open to new experiences</p>
+ 			<p>
+ 				<select id="q8">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">1 (Strongly Disagree)</option>
+ 					<option value="2">2</option>
+ 					<option value="3">3 (Unsure)</option>
+ 					<option value="4">4</option>
+ 					<option value="5">5 (Strongly Agree)</option>
+ 				</select>
+ 			</p>
+
+ 			<p>9. You usually conceal your feelings</p>
+ 			<p>
+ 				<select id="q9">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">1 (Strongly Disagree)</option>
+ 					<option value="2">2</option>
+ 					<option value="3">3 (Unsure)</option>
+ 					<option value="4">4</option>
+ 					<option value="5">5 (Strongly Agree)</option>
+ 				</select>
+ 			</p>
+
+ 			<p>10. You are nervous before big events</p>
+ 			<p>
+ 				<select id="q10">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">1 (Strongly Disagree)</option>
+ 					<option value="2">2</option>
+ 					<option value="3">3 (Unsure)</option>
+ 					<option value="4">4</option>
+ 					<option value="5">5 (Strongly Agree)</option>
+ 				</select>
+ 			</p>
+
  			<button id="submit">submit</button>
- 		</div>
- 	</div>
 
  	<!--Import jQuery before materialize.js-->
  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
@@ -56,16 +151,35 @@
  			var answers = [];
  			answers.push($("#q1").val());
  			answers.push($("#q2").val());
+ 			answers.push($("#q3").val());
+ 			answers.push($("#q4").val());
+ 			answers.push($("#q5").val());
+ 			answers.push($("#q6").val());
+ 			answers.push($("#q7").val());
+ 			answers.push($("#q8").val());
+ 			answers.push($("#q9").val());
+ 			answers.push($("#q10").val());
 
  			var newUser = {
  				name: $("#name").val().trim(),
  				answers: answers
  			};
 
- 			console.log("User successfully added");
-
  			$.post("/api/add", newUser, function(data) {
- 				alert(data.hello)
+ 				alert("Congratulations, your match is " + data.matchName);
+
+ 				// Clear input after submission:
+ 				$("#name").val("");
+ 				$("#q1").val("");
+ 				$("#q2").val("");
+ 				$("#q3").val("");
+ 				$("#q4").val("");
+ 				$("#q5").val("");
+ 				$("#q6").val("");
+ 				$("#q7").val("");
+ 				$("#q8").val("");
+ 				$("#q9").val("");
+ 				$("#q10").val("");
  			})
 
  		});
