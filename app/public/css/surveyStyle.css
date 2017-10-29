@@ -27,3 +27,12 @@ hr {
 h2 {
 	margin-top: 0px;
 }
+
+#enter {
+	margin-bottom: 0px;
+	font-size: 20px;
+}
+
+#modalcontents {
+	font-size: 18px;
+}

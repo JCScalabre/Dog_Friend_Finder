@@ -47,6 +47,10 @@ module.exports = function(app) {
 		var match = userData[differences.indexOf(lowestNum)].name
 		console.log("Your match is: " + match)
 
-		res.json({matchName: match});
+		res.json({
+			matchName: match,
+			diff: lowestNum
+		});
+		// res.redirect("/survey")
 	});
 };
